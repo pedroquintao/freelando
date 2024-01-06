@@ -29,6 +29,7 @@ const tema = {
     },
     espacamentos: {
         s: '16px',
+        m: '24px',
         l: '32px'
     },
     fontFamily: "'Montserrat', 'sans-serif'"
