@@ -6,7 +6,7 @@ import logoBranco from "../../assets/Logo branco.svg"
         justify-content: space-between;
         font-size: 24px;
         background-color: ${prop => prop.theme.cores.primarias.a};
-        padding: 24px 120px;s
+        padding: 24px 120px;
     `
 
     const Imagem = styled.img`

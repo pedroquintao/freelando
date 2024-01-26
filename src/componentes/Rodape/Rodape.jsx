@@ -9,9 +9,6 @@ const DivRodape = styled.footer`
     background: ${props => props.theme.cores.primarias.a};
     padding: ${props => props.theme.espacamentos.xl} 120px;
     color: ${props => props.theme.cores.branco};
-    /* padding: 48px 120px; */
-    /* position: absolute; */
-    /* bottom: 0; */
 `
 
 export const Rodape = () => {
