@@ -52,7 +52,7 @@ function App() {
                 </Col>
               </Row>
               <Row>
-                <Col lg={6} md={6} sm={6} justify='space-around'>
+                <Col lg={6} md={6} sm={6}>
                   <Botao variante="secundaria">Anterior</Botao>
                 </Col>
                 <Col lg={6} md={6} sm={6}>
