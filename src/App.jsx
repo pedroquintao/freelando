@@ -1,5 +1,6 @@
 import { Cabecalho } from "./componentes/Cabecalho/Cabecalho";
 import { CampoTexto } from "./componentes/CampoTexto/CampoTexto";
+import { ListaSuspensa } from "./componentes/ListaSuspensa/ListaSuspensa";
 import { Card } from "./componentes/Card/Card";
 import { Estilos } from "./componentes/EstilosGlobais/Estilos";
 import { ProvedorTema } from "./componentes/ProvedorTema/ProvedorTema";
@@ -32,7 +33,7 @@ function App() {
               </Row>
               <Row>
                 <Col lg={4} md={4} sm={4}>
-                  <CampoTexto titulo="Estado" />
+                  <ListaSuspensa titulo="Estado" />
                 </Col>
                 <Col lg={8} md={8} sm={8}>
                   <CampoTexto titulo="Cidade" />
