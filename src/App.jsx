@@ -5,6 +5,7 @@ import { Estilos } from "./componentes/EstilosGlobais/Estilos";
 import { ProvedorTema } from "./componentes/ProvedorTema/ProvedorTema";
 import { Tipografia } from "./componentes/Tipografia/Tipografia";
 import { Rodape } from "./componentes/Rodape/Rodape";
+import { Botao } from "./componentes/Botao/Botao";
 import { Col, Container, Row } from "react-grid-system";
 
 function App() {
@@ -12,9 +13,9 @@ function App() {
     <ProvedorTema>
       <Cabecalho />
       <Estilos />
-      <Container>
+      <Container style={{ margin: '80px 0'}}>
         <Row justify="center">
-          <Col lg={6}>
+          <Col lg={6} md={8} sm={12}>
             <Card>
               <Tipografia componente="h1" variante="h1">
                 Freelando
@@ -24,7 +25,42 @@ function App() {
                 melhores freelancers. Em seguida, você poderá dar mais detalhes
                 sobre suas demandas e sobre sua forma de trabalho.
               </Tipografia>
-              <CampoTexto titulo="Nome Completo" />
+              <Row>
+                <Col>
+                  <CampoTexto titulo="Nome Completo" />
+                </Col>
+              </Row>
+              <Row>
+                <Col lg={4} md={4} sm={4}>
+                  <CampoTexto titulo="Estado" />
+                </Col>
+                <Col lg={8} md={8} sm={8}>
+                  <CampoTexto titulo="Cidade" />
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <CampoTexto titulo="E-mail" />
+                </Col>
+              </Row>
+              <Row>
+                <Col lg={6} md={6} sm={6}>
+                  <CampoTexto titulo="Senha" />
+                </Col>
+                <Col lg={6} md={6} sm={6}>
+                  <CampoTexto titulo="Repita a senha" />
+                </Col>
+              </Row>
+              <Row>
+                <Col lg={6} md={6} sm={6} justify='space-around'>
+                  <Botao variante="secundaria">Anterior</Botao>
+                </Col>
+                <Col lg={6} md={6} sm={6}>
+                  <div style={{ textAlign: 'right' }}>
+                    <Botao variante="primaria">Próximo</Botao>
+                  </div>
+                </Col>
+              </Row>
             </Card>
           </Col>
         </Row>
